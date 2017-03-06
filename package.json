@@ -1,0 +1,19 @@
+{
+  "name": "yjj",
+  "version": "1.0.0",
+  "description": "a demo for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "npm"
+  ],
+  "author": "yang jingjing",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^2.1.5",
+    "mysql": "^2.13.0"
+  }
+}
