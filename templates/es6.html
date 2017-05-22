@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>es6</title>
+  </head>
+  <body>
+    es6学习
+    <script type="text/javascript">
+    //1.常量
+      const fruit = 'fruit'
+      const arr = ['a', 'b']
+      arr.push('first lesson')
+      var arr2 = arr
+      arr2[0] = 'c'
+      arr.unshift('d')//向首部添加
+      // console.log(arr + '-----' + arr2)
+
+    //2.
+    function breakfast() {
+      return ['cake', 'tea', 'apple']
+    }
+    var temp = breakfast(),
+    desert = temp[0], drink = temp[1], fruits = temp[2]
+    let(desert, drink, fruit) = breakfast
+    console.log(desert + drink + fruit);
+    </script>
+  </body>
+</html>

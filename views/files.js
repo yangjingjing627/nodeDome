@@ -1,4 +1,4 @@
-var fs = require('fs')    //文件的模块
+var fs = require('fs')    //node封装的文件的模块
 
 module.exports = {
   readFileSync: function (res) {

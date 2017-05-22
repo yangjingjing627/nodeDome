@@ -1,6 +1,6 @@
 var files = require('./files.js')
 var url = require('url')
-var queryString = require('querystring')
+var queryString = require('querystring')  //post方法用到queryString
 
 module.exports = {       //commonjs把exports、 modile exports都暴露了
   home: function (res) {
@@ -38,6 +38,10 @@ module.exports = {       //commonjs把exports、 modile exports都暴露了
   angular: function (res) {
     res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'})   //第一个参数200，状态码，第二个参数，传入的是html
     files.readFile('./templates/angular.html', res)    //file.js的readFile已经有下面的两行执行代码，所以直接就去掉了
+  },
+  es6: function (res) {
+    res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'})   //第一个参数200，状态码，第二个参数，传入的是html
+    files.readFile('./templates/es6.html', res)    //file.js的readFile已经有下面的两行执行代码，所以直接就去掉了
   },
   image: function (res) {
     res.writeHead(200, {'Content-Type': 'image/jpeg'})   //第一个参数200，状态码，第二个参数，传入的是html
